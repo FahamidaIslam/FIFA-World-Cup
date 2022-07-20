@@ -1,0 +1,110 @@
+/* common style  */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: auto;
+
+}
+
+/* header style  */
+
+.header-part {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+    border-radius: 30px;
+    margin: 5px 140px 30px 140px;
+
+
+}
+
+
+.header-title {
+    line-height: 40px;
+
+}
+
+.para-line {
+    margin: 15px auto;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+
+}
+
+.fifa-btn {
+    padding: 15px 30px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 15px;
+    background-color: indigo;
+}
+
+.header-img {
+    display: flex;
+    height: 500px;
+
+}
+
+/* main style  */
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 5px 140px 30px 140px;
+}
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: black;
+    color: white;
+
+}
+
+#upcoming-match,
+#all-group {
+    background-color: white;
+    color: black;
+}
+
+#upcoming-match,
+#all-group,
+#blog:hover {
+    border: 2px solid indigo;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.card,
+img {
+    margin-bottom: 20px;
+}
+
+.transfer {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: grey;
+}
