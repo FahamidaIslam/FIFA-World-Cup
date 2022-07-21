@@ -41,10 +41,16 @@ body {
 .fifa-btn {
     padding: 20px 50px;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     margin-bottom: 10px;
     background-color: indigo;
+    transition: width 5s ease;
+
+}
+
+.fifa-btn:hover {
+    width: 250px;
 }
 
 .header-img {
@@ -65,7 +71,7 @@ body {
 .side-bar {
     display: flex;
     flex-direction: column;
-    padding: 50px;
+    padding: 40px;
     background-color: black;
     color: white;
     border-radius: 10px;
@@ -73,13 +79,14 @@ body {
     height: 312px;
 }
 
-.side-btn {
+.side-link {
     padding: 15px 70px;
     margin: 5px;
     border-radius: 10px;
     font-weight: bold;
     background-color: indigo;
     color: white;
+    text-decoration: none;
 }
 
 #upcoming-match,
@@ -99,15 +106,14 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px;
+    gap: 20px;
     row-gap: 40px;
-
-
 }
 
 .card {
     border-radius: 10px;
     box-shadow: 1px 1px 1px rgb(215, 216, 216);
+    padding: 10px;
 
 }
 
@@ -140,6 +146,48 @@ body {
 #view-btn {
     visibility: hidden;
 }
+
+/*================== design for website 2 =======================*/
+
+
+.flags {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 40px;
+}
+
+
+.flag-img {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px rgb(215, 216, 216);
+    padding: 50px;
+}
+
+
+.flag-dec {
+    margin-top: 10px;
+}
+
+/*================== design for website 3=======================*/
+
+.fa-star {
+    fill: yellow;
+}
+
+.btn-book {
+    background-color: rgb(202, 69, 69);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
 
 /* =============footer style  ===============*/
 
@@ -189,7 +237,6 @@ hr {
 @media only screen and (max-width: 688px) {
 
 
-
     .header-part {
         flex-direction: column;
         text-align: center;
@@ -211,6 +258,7 @@ hr {
 
     .cards {
         grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 
     .footer-content {
@@ -226,6 +274,21 @@ hr {
 #view-btn {
     visibility: hidden;
 }
+
+
+.flags {
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.flag-img {
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 /* Tablet screen  */
 
@@ -256,6 +319,7 @@ hr {
 
     .cards {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 20px;
         justify-content: center;
 
@@ -271,4 +335,14 @@ hr {
         height: 47px;
 
     }
+}
+
+.flags {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.flag-img {
+    display: flex;
+    align-items: center;
 }
